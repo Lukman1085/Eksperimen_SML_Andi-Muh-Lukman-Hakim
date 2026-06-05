@@ -54,7 +54,7 @@ jobs:
 
       - name: Tag Docker Image
         run: |
-          docker tag cc ${{ secrets.DOCKER_HUB_USERNAME }}/first_dockerhub_repo
+          docker tag first_dockerhub_repo ${{ secrets.DOCKER_HUB_USERNAME }}/first_dockerhub_repo
 
       - name: Push Docker Image
         run: |
